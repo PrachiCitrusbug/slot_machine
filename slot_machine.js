@@ -112,6 +112,9 @@ function printRows(rows){
     }
 }
 
+b=[1,2,3].map(item => item)
+a=[1,2,3].forEach(item => item)
+
 const getMax = (a, b) => Math.max(a, b);
 
 function getWinnings(rows, bet, lines){
@@ -143,9 +146,9 @@ function getWinnings(rows, bet, lines){
     return amount_won;
 }
 
-
 function game(){
     let balance = deposit();
+    
     while(true){
         const numLines = getNumberOfLines();
         const bet = getBet(balance, numLines);
@@ -169,3 +172,6 @@ function game(){
 }
 
 game();
+
+
+var name='prachi';
